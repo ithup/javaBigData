@@ -1,0 +1,27 @@
+package com.ithuplion.service.impl;
+
+import com.ithuplion.service.MessageServie;
+
+public class MessageServiceImpl implements MessageServie{
+
+	@Override
+	public void menu() {
+		
+	}
+
+	@Override
+	public void select() {
+		
+	}
+
+	@Override
+	public void displayAll() {
+		
+	}
+
+	@Override
+	public void addOne() {
+		
+	}
+
+}

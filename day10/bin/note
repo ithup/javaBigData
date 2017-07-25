@@ -1,0 +1,24 @@
+1.包装类：
+	基本数据类型：
+		int（4个字节）
+		byte-1
+		char-2
+		short-2
+		long-8
+		boolean-1
+		float-4
+		double-8
+	包装类：
+		数值型：
+			Integer
+			Byte
+			Short
+			Double
+			Long
+			Float
+			以上都是Number的子类
+		非数字型：
+			Boolean
+			Character
+		若对以上的基本数据类型的长度不确定，可以使用其对应的包装类中的一些属性及方法来测试
+		System.out.println(Integer.SIZE);//测试该类型变量在内存占有的位数

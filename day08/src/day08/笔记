@@ -1,0 +1,21 @@
+基本数据类型：
+int char long float double short boolean byte
+对应的包装类型：
+Integer Character Long Float Double Short Booleat Byte
+接口：
+	是一种标准，一种规范
+定义接口：
+	格式：
+	 	修饰符    interface 名称{
+	 		常量
+	 		抽象方法
+	 	}
+接口其实也是一种特殊的类。在java中，类只能实现单继承，但是接口可以实现多重继承
+接口可以实现多继承，如：
+	interface Usb{
+		public final double  USB=3.0;
+	}
+	
+-----------------------------------------------------------
+和接口相关的设计模式
+	工厂设计：

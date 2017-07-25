@@ -1,0 +1,53 @@
+package day14;
+
+import java.util.ArrayList;
+import java.util.List;
+/**
+ * 企鹅测试类
+ * @author acer
+ *
+ */
+public class PenguinDemo {
+	public static void main(String[] args) {
+		//创建arraylist集合对象
+		List<Penguin> penguins=new ArrayList<>();
+		//创建企鹅对象
+		Penguin p1=new Penguin("雄安区","Q仔");
+		Penguin p2=new Penguin("溪琼","Q妹");
+		Penguin p3=new Penguin("haha","Q仔");
+		//向集合里添加数据
+		penguins.add(p1);
+		penguins.add(p2);
+		penguins.add(p3);
+		System.out.println("企鹅个数："+penguins.size());
+		//遍历企鹅
+		/*for(int i=0;i<penguins.size();i++){
+			Penguin penguin = (Penguin) penguins.get(i);
+			System.out.println(penguin.name+"\t"+penguin.sex);
+		}*/
+		//增强for循环遍历企鹅
+		/*for (Penguin p : penguins) {
+			System.out.println(p.name+"\t"+p.sex);
+		}*/
+		showPetInfo(penguins);			//调用遍历企鹅的方法
+		System.out.println("删除之前共计有"+penguins.size()+"记录");
+		penguins.remove(0);			//删除第一条记录,根据索引删除
+		penguins.remove(p3);		//删除haha的记录,根据对象名称删除
+		System.out.println("删除后的记录：");
+		/*for(int i=0;i<penguins.size();i++){
+			Penguin penguin = penguins.get(i);
+			System.out.println(penguin.name+"\t"+penguin.sex);
+		}*/
+		showPetInfo(penguins);
+		//用contains 判断是否存在
+		if(penguins.contains(p2)){
+			System.out.println("集合中包含："+p2.name);
+		}
+	}
+	public static void showPetInfo(List penguins){
+		for(int i=0;i<penguins.size();i++){
+			Penguin penguin = (Penguin) penguins.get(i);
+			System.out.println(penguin.name+"\t"+penguin.sex);
+		}
+	}
+}

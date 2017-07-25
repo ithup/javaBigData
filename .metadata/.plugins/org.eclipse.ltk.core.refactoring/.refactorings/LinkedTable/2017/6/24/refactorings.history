@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.ithuplion.dan.LinkedTest&apos; to &apos;DanLinked&apos;&#x0D;&#x0A;- Original project: &apos;LinkedTable&apos;&#x0D;&#x0A;- Original element: &apos;com.ithuplion.dan.LinkedTest&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ithuplion.dan.DanLinked&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;LinkedTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.ithuplion.dan{LinkedTest.java[LinkedTest" matchStrategy="1" name="DanLinked" qualified="false" references="true" similarDeclarations="false" stamp="1497602830170" textual="false" version="1.0"/>
+</session>

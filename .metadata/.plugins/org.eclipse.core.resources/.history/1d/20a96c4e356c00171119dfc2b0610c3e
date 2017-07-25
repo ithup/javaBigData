@@ -1,0 +1,10 @@
+package com.ithuplion.service;
+/**
+ * 建立业务层的接口
+ * 
+ * @author acer
+ *
+ */
+public interface MessageServie {
+	
+}

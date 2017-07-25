@@ -1,0 +1,20 @@
+package day12;
+/**
+ * ¾²Ì¬ÄÚ²¿Àà
+ * @author acer
+ *
+ */
+class Outer3{
+	String name="tom";
+	static class Inner3{
+		static String name="rose";
+		public static void print(){
+			System.out.println("name="+name);
+		}
+	}
+}
+public class Demo03 {
+	public static void main(String[] args) {
+		Outer3.Inner3.
+	}
+}

@@ -1,0 +1,47 @@
+package day14;
+
+import java.util.ArrayList;
+import java.util.List;
+/**
+ * 企鹅测试类
+ * @author acer
+ *
+ */
+public class PenguinDemo {
+	public static void main(String[] args) {
+		//创建ArrayList集合对象
+		List<Penguin> penguins=new ArrayList<>();
+		//创建三个企鹅对象
+		Penguin p1=new Penguin("雄安区","Q仔");
+		Penguin p2=new Penguin("溪琼","Q妹");
+		Penguin p3=new Penguin("haha","Q仔");
+		//向集合里添加数据
+		penguins.add(p1);
+		penguins.add(p2);
+		penguins.add(p3);
+		System.out.println("企鹅个数："+penguins.size());
+		//调用遍历企鹅的方法
+		showPetInfo(penguins);			
+		System.out.println("删除之前共计有"+penguins.size()+"记录");
+		//删除第一条记录,根据索引删除
+		penguins.remove(0);		
+		//删除haha的记录,根据对象名称删除
+		penguins.remove(p3);		
+		System.out.println("删除后的记录：");
+		showPetInfo(penguins);
+		//用contains 判断集合里是否存在指定对象
+		if(penguins.contains(p2)){	
+			System.out.println("集合中包含："+p2.name);
+		}
+	}
+	/**
+	 * 遍历List集合数据
+	 * @param penguins
+	 */
+	public static void showPetInfo(List penguins){
+		for(int i=0;i<penguins.size();i++){
+			Penguin penguin = (Penguin) penguins.get(i);
+			System.out.println(penguin.name+"\t"+penguin.sex);
+		}
+	}
+}

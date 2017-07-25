@@ -1,0 +1,74 @@
+package com.ithuplion.service.impl;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+import com.ithuplion.MessageDao.MessageDao;
+import com.ithuplion.MessageDaoImpl.MessageDaoImpl;
+import com.ithuplion.domain.Message;
+import com.ithuplion.service.MessageServie;
+
+public class MessageServiceImpl implements MessageServie{
+	Scanner input=new Scanner(System.in);
+	private MessageDao md=new MessageDaoImpl();
+	@Override
+	public void menu() {
+		System.out.println("************************************************");
+		System.out.println("===========欢迎使用留言系统v1.0==============");
+		System.out.println("----------------------主菜单-------------------------");
+		System.out.println("\t1.显示留言");
+		System.out.println("\t2.添加留言");
+		System.out.println("\t3.退出系统");
+		System.out.println("************************************************");
+	}
+
+	@Override
+	public void select() {
+			System.out.print("请选择菜单项：");
+			int op = input.nextInt();
+			switch(op){
+			case 1:
+				this.displayAll();
+				break;
+			case 2:
+				this.addOne();
+				break;
+			case 3:
+				System.out.println("退出系统");
+				System.exit(0);
+				break;//退出虚拟机
+			}
+	}
+
+	@Override
+	public void displayAll() {
+		md.displayMessage();
+	}
+
+	@Override
+	public void addOne() {
+		System.out.print("请输入留言编号：");
+		int id=input.nextInt();
+		System.out.print("请输入留言人：");
+		String username=input.next();
+		System.out.print("请输入留言标题：");
+		String title=input.next();
+		System.out.print("请输入留言内容：");
+		String content = input.next();
+		Message message = new Message(id,username,title,content,new Date());
+		md.addMessage(message);//添加留言信息
+	}
+
+	@Override
+	public void initMessage() {
+		Message all[]=new Message[10];//对象数组，里面保存Message的对象
+		Message m1 = new Message(1,"郭靖","java培训","java大数据培训",new Date());
+		Message m2 = new Message(2,"黄蓉","jsp学习","jsp学习心得体会",new Date());
+		Message m3 = new Message(3,"杨过","servlet学习","servlet容器",new Date());
+		all[0]=m1;
+		all[1]=m2;
+		all[2]=m3;
+	}
+
+}

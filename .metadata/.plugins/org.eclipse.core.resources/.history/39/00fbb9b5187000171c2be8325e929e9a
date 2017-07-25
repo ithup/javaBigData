@@ -1,0 +1,13 @@
+package day14;
+
+public class Penguin extends Pet {
+	String sex;			//´ÆÐÛ
+	public Penguin(String name,String sex){
+		super(name);
+		this.name=name;
+	}
+	public void print(){
+		super.print();
+		System.out.println(name+sex);
+	}
+}

@@ -1,0 +1,11 @@
+package day12;
+/**
+ * 内部类是指一个类中包含另一个类的情况
+ * 		内部类的类型：
+ * 			1.成员内部类类型
+ * @author acer
+ *
+ */
+public class Demo01 {
+
+}

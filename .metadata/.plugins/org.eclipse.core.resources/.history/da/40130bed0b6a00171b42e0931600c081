@@ -1,0 +1,235 @@
+package com.ithuplion.bjs.view;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.ithuplion.bjs.controller.CustomerController;
+import com.ithuplion.bjs.controller.ManagerController;
+import com.ithuplion.bjs.domain.Customer;
+import com.ithuplion.bjs.domain.Manager;
+
+/*
+ * 视图层：用户看到和操作的界面
+ * 数据传递给controller层实现
+ * 
+ */
+public class MainView {
+	private ManagerController managerController = new ManagerController();
+	private CustomerController customerController = new CustomerController();
+
+	/*
+	 * 实现界面效果 接收用户的输入 根据数据调用不同的功能
+	 */
+	public void run() throws Exception {
+		// 创建Scanner类对象
+		Scanner input = new Scanner(System.in);
+		while (true) {
+			System.out.println("\t欢迎使用便捷购物管理系统1.0版\n\n\n");
+			System.out.println("****************************************\n\n");
+			System.out.println("\t1.登录系统\n\n");
+			System.out.println("\t2.更改管理员密码\n\n");
+			System.out.println("\t3.退出系统\n\n");
+			System.out.println("****************************************\n\n");
+			System.out.println("请输入要操作的功能序号[1-3]:");
+			// 接收用户的菜单选择
+			int choose = input.nextInt();
+			// 对选择的菜单判断,调用不同的功能
+			switch (choose) {
+			case 1:
+				loginManager();
+				break;
+			case 2:
+				editManager();
+				break;
+			case 3:
+				System.exit(0);
+				break;
+			}
+		}
+	}
+
+	/*
+	 * 定义方法，实现对管理员密码的更改 实现思想： 接收用户的输入的信息 封装成Manager对象 调用控制层的方法，传递Manager对象，实现编辑
+	 * 
+	 */
+	private void editManager() {
+
+	}
+
+	/*
+	 * 定义方法，管理员的登录功能 实现思想： 接收用户的输入信息 封装成Manager对象 调用控制层的方法，实现登录
+	 */
+	private void loginManager() throws Exception {
+		Scanner input = new Scanner(System.in);
+		System.out.print("请输入用户名：");
+		String username = input.next();
+		System.out.print("请输入密码：");
+		String password = input.next();
+		Manager manager = managerController.login(username, password);
+		if (manager != null) {
+			mainView();
+		} else {
+			System.out.println("登录失败");
+		}
+	}
+
+	private void mainView() {
+		// 创建Scanner类对象
+		Scanner input = new Scanner(System.in);
+		while (true) {
+			System.out.println("\t\n欢迎使用便捷购物管理系统\n\n\n");
+			System.out.println("****************************************\n\n");
+			System.out.println("\t1.客户信息管理\n\n");
+			System.out.println("\t2.购物结算\n\n");
+			System.out.println("\t3.真情回馈\n\n");
+			System.out.println("\t4.注销\n\n");
+			System.out.println("****************************************\n\n");
+			System.out.print("请输入要操作的功能序号[1-4]:");
+			// 接收用户的菜单选择
+			int choose = input.nextInt();
+			// 对选择的菜单判断,调用不同的功能
+			switch (choose) {
+			case 1:
+				customerManager();
+				break;
+			case 2:
+				shopping();
+				break;
+			case 3:
+				zhenQingHuiKui();
+				break;
+			case 4:
+				System.exit(0);
+				break;
+			}
+		}
+	}
+
+	/*
+	 * 真情回馈方法：
+	 */
+	private void zhenQingHuiKui() {
+		System.out.println("真情回馈");
+	}
+
+	/*
+	 * 购物结算方法：
+	 */
+	private void shopping() {
+		System.out.println("购物结算");
+	}
+
+	/*
+	 * 客户信息管理方法：
+	 * 
+	 */
+	private void customerManager() {
+		//创建Scanner类对象
+		Scanner input=new Scanner(System.in);
+		while(true){
+		System.out.println("\n\n便捷购物管理系统>客户信息管理\n");
+		System.out.println("****************************************\n\n");
+		System.out.println("\t1.显示所有客户信息\n\n");
+		System.out.println("\t2.添加客户信息\n\n");
+		System.out.println("\t3.修改客户信息\n\n");
+		System.out.println("\t4.查询客户信息\n\n");
+		System.out.println("****************************************\n\n");
+		System.out.println("请输入要操作的功能序号[1-4]或按'n'返回上一级菜单：");
+		//接收用户的菜单选择
+		int choose = input.nextInt();
+		//对选择的菜单判断,调用不同的功能
+		switch(choose){
+		  case 1:
+			showAllCustomer();
+			break;
+		  case 2:
+			addCustomer();
+			break;
+		  case 3:
+			editCustomer();
+			break;
+		  case 4:
+			findCustomerByNo();
+			break;
+		}
+		}
+	}
+	/*
+	 * 查询客户信息方法：根据客户会员号查询
+	 * 		用户输入会员号，调用控制层方法
+	 */
+	private void findCustomerByNo() {
+		//创建Scanner类对象
+		Scanner input=new Scanner(System.in);
+		System.out.println("\n\n便捷购物管理系统>客户信息管理>查询客户信息");
+		System.out.print("请输入会员号：");
+		int custNo=input.nextInt();
+		System.out.println("会员号\t\t生日\t\t积分");
+		System.out.println("-------------|--------------|-----------");
+		try {
+			Customer customer=customerController.findCustomerByCustNo(custNo);
+		} catch (Exception e) {
+			System.out.println("用户不存在");
+		}
+	}
+
+	/*
+	 * 修改客户信息方法：
+	 * 	实现思想：
+	 * 		1.查询需要修改的客户信息：根据会员号查询
+	 * 		2.
+	 * 
+	 */
+	private void editCustomer() {
+		System.out.println("修改客户信息");
+		
+	}
+
+	/*
+	 * 添加客户信息方法：
+	 * 	实现思想：
+	 * 		用户输入客户的基本信息，封装到Customer对象中，调用Controller方法
+	 * 
+	 */
+	private void addCustomer() {
+		//创建Scanner类对象
+		Scanner input=new Scanner(System.in);
+		System.out.println("\n\n便捷购物管理系统>客户信息管理>添加客户信息");
+		System.out.print("请输入会员号(<4位整数>):");
+		int cusoNo=input.nextInt();
+		System.out.print("请输入会员号生日(月/日<用2位整数表示>):");
+		String custBirth=input.next();
+		System.out.print("请输入会员号积分:");
+		int custScore = input.nextInt();
+		Customer customer=new Customer(cusoNo,custBirth,custScore);
+		try {
+			int n=customerController.addCustomer(customer);
+			if(n>0){
+				System.out.println("添加成功");
+			}else{
+				System.out.println("添加失败");
+			}
+		} catch (Exception e) {
+			System.out.println("添加失败");
+		}
+	}
+
+	/**
+	 * 显示所有客户信息方法：
+	 * 		调用控制层的方法，查询所有客户信息
+	 * 
+	 */
+	private void showAllCustomer() {
+		System.out.println("\n\n便捷购物管理系统>客户信息管理>显示客户信息\n\n");
+		System.out.println("会员号\t\t生日\t\t积分");
+		System.out.println("-------------|--------------|-----------");
+		try {
+			List<Customer> allCustomers = customerController.showAllCustomers();
+			for (Customer customer : allCustomers) {
+				System.out.println(customer.getCustNo()+"\t\t"+customer.getCustBirth()+"\t\t"+customer.getCustScore());
+			}
+		} catch (Exception e) {
+			System.out.println("用户信息为空");
+		}
+	}
+}

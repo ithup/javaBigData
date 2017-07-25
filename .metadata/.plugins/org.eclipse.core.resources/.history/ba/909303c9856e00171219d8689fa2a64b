@@ -1,0 +1,17 @@
+package com.ithup.thread;
+/**
+ * 创建和启动一个线程
+ * @author acer
+ *
+ */
+public class ThreadMain {
+	public static void main(String[] args) {
+		SubThread st=new SubThread();
+		st.start();
+		/*for(int i=0;i<100;i++){
+			System.out.println("main.."+i);
+		}*/
+		Thread currentThread = Thread.currentThread();
+		System.out.println(currentThread.getName());
+	}
+}

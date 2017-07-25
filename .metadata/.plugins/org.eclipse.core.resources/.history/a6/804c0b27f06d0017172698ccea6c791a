@@ -1,0 +1,21 @@
+package day13;
+/**
+ * 数据库连接工具类
+ */
+import java.sql.Connection;
+public class DBConn {
+	public static final String DRIVER="com.mysql.jdbc.Driver";
+	public static final String URL="jdbc:mysql:///test";
+	public static final String USER="root";
+	public static final String PASSWORD="tiger";
+	static{
+		try {
+			Class.forName(DRIVER);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public static Connection getConn(){
+		return null;
+	}
+}

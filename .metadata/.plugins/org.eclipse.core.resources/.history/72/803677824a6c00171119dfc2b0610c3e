@@ -1,0 +1,56 @@
+package com.ithuplion.MessageDaoImpl;
+/**
+ * 实现类：主要实现接口中所有的抽象方法
+ */
+import com.ithuplion.MessageDao.MessageDao;
+import com.ithuplion.domain.Message;
+
+public class MessageDaoImpl implements MessageDao{
+	Message all[]=new Message[10];//对象数组，里面保存Message的对象
+	
+	@Override
+	public void addMessage(Message message) {
+		//添加留言信息
+		//int i=0;//此时i表示数组元素的下标
+		/*while(true){
+			if(all[i] == null){
+				all[i] = message;
+				System.out.println(all[i]);
+				break;
+			}else{
+				i++;
+			}
+		}*/
+		//for循环
+		for(int k=0;k<1000;k++){
+			if(all[k] == null){
+				all[k] = message;
+				System.out.println(all[k]);
+				break;
+			}
+		}
+	}
+
+	@Override
+	public void displayMessage() {
+		for (Message message : all) {
+			System.out.println(message);
+		}
+	}
+
+	@Override
+	public Message findById(int id) {
+		return null;
+	}
+
+	@Override
+	public boolean modifyMessage(int id, Message message) {
+		return false;
+	}
+
+	@Override
+	public boolean deleteMessage(int id) {
+		return false;
+	}
+
+}

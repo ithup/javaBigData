@@ -1,0 +1,45 @@
+package day14;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+/**
+ * 通过Map,显示对应的键值信息 遍历集合信息
+ * 
+ * @author acer
+ *
+ */
+
+public class MapTest3 {
+	// 程序的入口
+	public static void main(String[] args) {
+		Dog tom = new Dog("tom", "雪娜瑞");
+		Dog yaya = new Dog("yaya", "拉布拉多");
+		Dog feifei = new Dog("feifei", "飞飞");
+		Dog wangcai = new Dog("wangcai", "小强");
+		// 创建map集合
+		Map pet = new HashMap<>();
+		// 添加数据
+		pet.put(tom.getName(), tom);
+		pet.put(yaya.getName(), yaya);
+		pet.put(feifei.getName(), feifei);
+		pet.put(wangcai.getName(), wangcai);
+		// 使用迭代器遍历集合数据
+		Set key = pet.keySet();
+		Iterator it = key.iterator();
+		while (it.hasNext()) {
+			String keyDog = (String) it.next();
+			Dog dog = (Dog) pet.get(keyDog);
+			System.out.println(keyDog + "\t" + dog.strain);
+		}
+		System.out.println("-----------------------------------");
+		// 使用增强for循环遍历集合数据
+		Set keys = pet.keySet();
+		for (Object keyDog : keys) {
+			Dog dog = (Dog) pet.get(keyDog);
+			System.out.println(keyDog + "\t" + dog.strain);
+		}
+	}
+}

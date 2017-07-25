@@ -1,0 +1,20 @@
+package day14;
+/**
+ * π∑π∑¿‡
+ * @author acer
+ *
+ */
+public class Dog extends Pet{
+	String strain;		//∆∑÷÷
+	
+	
+	public Dog(String name,String strain){
+		super(name);		//ºÃ≥–∏∏¿‡Í«≥∆
+		
+	}
+	
+	public void print(){
+		super.print();
+		System.out.println(name+"\t"+strain);
+	}
+}

@@ -1,0 +1,20 @@
+package day14;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * ²âÊÔÀà
+ * @author acer
+ *
+ */
+public class CollectionDemo01 {
+		public static void main(String[] args) {
+			List dogs=new ArrayList();
+			Dog dog1=new Dog("tom","Ñ©ÄÈÈğ");
+			Dog dog2=new Dog("tom","Ñ©ÄÈÈğ");
+			Dog dog3=new Dog("tom","Ñ©ÄÈÈğ");
+			Dog dog4=new Dog("tom","Ñ©ÄÈÈğ");
+			
+	}
+}

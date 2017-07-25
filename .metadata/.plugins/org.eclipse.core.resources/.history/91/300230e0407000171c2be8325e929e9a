@@ -1,0 +1,36 @@
+package day14;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+/**
+ * 通过Map,显示对应的键值信息
+ * 遍历集合信息
+ * @author acer
+ *
+ */
+
+public class MapTest3 {
+	// 程序的入口
+	public static void main(String[] args) {
+		// 创建map集合
+		Map pet = new HashMap<>();
+		// 添加数据
+		pet.put("欧欧", "ouou");
+		pet.put("幽幽", "youyou");
+		pet.put("陌陌", "momo");
+		pet.put("嘎嘎", "gaga");
+		pet.put("娜娜", "nana");
+		//遍历集合数据
+		Set keys = pet.keySet();
+		Iterator it = keys.iterator();
+		while(it.hasNext()){
+			String key = (String) it.next();		//取出key
+			String value = (String) pet.get(key);	//根据key取值
+			System.out.println(key+"\t"+value);
+			
+		}
+	}
+}

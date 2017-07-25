@@ -1,0 +1,9 @@
+package com.ithup;
+/**
+ * 模拟斗地主洗牌发牌
+ * @author acer
+ *
+ */
+public class Poker {
+
+}

@@ -1,0 +1,25 @@
+package day14;
+
+import java.util.LinkedList;
+
+/**
+ * 使用linkedlist添加和删除相关记录
+ * @author acer
+ *
+ */
+public class LinkedListTest {
+	public static void main(String[] args) {
+		//创建LinkedList集合对象
+		LinkedList dogs  = new LinkedList();
+		Dog dog1=new Dog("tom","雪娜瑞");
+		Dog dog2=new Dog("yaya","拉布拉多");
+		Dog dog3=new Dog("feifei","飞飞");
+		Dog dog4=new Dog("旺财","小强");
+		//添加对象记录
+		dogs.add(dog1);
+		dogs.add(dog2);
+		dogs.add(dog3);
+		dogs.add(dog4);
+		dogs.g
+	}
+}

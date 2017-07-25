@@ -1,0 +1,32 @@
+package com.ithuplion.service.impl;
+
+import com.ithuplion.service.MessageServie;
+
+public class MessageServiceImpl implements MessageServie{
+
+	@Override
+	public void menu() {
+		System.out.println("===========欢迎使用留言系统v1.0==============");
+		System.out.println("------主菜单------");
+		System.out.println("1.显示留言");
+		System.out.println("2.添加留言");
+		System.out.println("3.退出系统");
+		
+	}
+
+	@Override
+	public void select() {
+		
+	}
+
+	@Override
+	public void displayAll() {
+		
+	}
+
+	@Override
+	public void addOne() {
+		
+	}
+
+}

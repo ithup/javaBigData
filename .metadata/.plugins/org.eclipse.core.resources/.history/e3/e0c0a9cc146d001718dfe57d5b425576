@@ -1,0 +1,23 @@
+package day12;
+/**
+ * 局部内部类
+ * @author acer
+ *
+ */
+	class Outer2{
+		String name="tom";
+		public void display(){
+			String name="rose";
+			class Inner2{
+				String name="jack";
+				public void print(){
+					System.out.println("姓名："+name);
+				}
+			}
+			new Inner2().print();
+		}
+		
+	}
+public class Demo02 {
+	
+}

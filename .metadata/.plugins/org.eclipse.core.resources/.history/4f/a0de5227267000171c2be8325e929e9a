@@ -1,0 +1,41 @@
+package day14;
+
+import java.util.LinkedList;
+import java.util.List;
+
+/**
+ * 使用linkedlist添加和删除相关记录
+ * @author acer
+ *
+ */
+public class LinkedListTest {
+	public static void main(String[] args) {
+		//创建LinkedList集合对象
+		LinkedList dogs  = new LinkedList();
+		Dog dog1=new Dog("tom","雪娜瑞");
+		Dog dog2=new Dog("yaya","拉布拉多");
+		Dog dog3=new Dog("feifei","飞飞");
+		Dog dog4=new Dog("旺财","小强");
+		//添加对象记录
+		dogs.add(dog1);
+		dogs.add(dog2);
+		dogs.add(dog3);
+		dogs.add(dog4);
+		//抓去第一条记录
+		Dog firstDog= (Dog) dogs.getFirst();
+		System.out.println("第一条狗狗记录："+firstDog);
+		//抓去最后一条记录
+		Dog lastDog = (Dog) dogs.getLast();
+		System.out.println("最后一条记录:"+lastDog);
+		//删除第一条记录
+		dogs.removeFirst();
+		//删除最后一条记录
+		dogs.removeLast();
+		System.out.println("删除部分狗狗之后还有"+dogs.size()+"条记录");
+		//遍历狗狗信息
+		for(int i=0;i<dogs.size();i++){
+			Dog dog = (Dog) dogs.get(i);
+			System.out.println(dog);
+		}
+	}
+}

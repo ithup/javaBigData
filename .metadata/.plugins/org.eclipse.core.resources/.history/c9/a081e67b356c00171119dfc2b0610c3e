@@ -1,0 +1,5 @@
+package com.ithuplion.service.impl;
+
+public class MessageServiceImpl {
+
+}

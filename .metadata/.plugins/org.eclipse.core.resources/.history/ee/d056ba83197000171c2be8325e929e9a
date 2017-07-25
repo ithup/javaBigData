@@ -1,0 +1,20 @@
+package day14;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 企鹅测试类
+ * @author acer
+ *
+ */
+public class PenguinDemo {
+	public static void main(String[] args) {
+		//创建arraylist集合对象
+		List penguins=new ArrayList();
+		//创建企鹅对象
+		Penguin p1=new Penguin("雄安区","Q仔");
+		Penguin p2=new Penguin("溪琼","Q妹");
+		Penguin p3=new Penguin("haha","Q仔");
+	}
+}

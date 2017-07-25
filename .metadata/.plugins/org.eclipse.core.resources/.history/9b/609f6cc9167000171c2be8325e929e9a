@@ -1,0 +1,15 @@
+package day14;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * ≤‚ ‘¿‡
+ * @author acer
+ *
+ */
+public class CollectionDemo01 {
+		public static void main(String[] args) {
+			List arr=new ArrayList();
+	}
+}
