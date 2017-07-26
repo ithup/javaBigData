@@ -21,7 +21,7 @@ public class FileRW {
 		StringBuffer sb = null;
 		try {
 			// 创建对象
-			fr = new FileReader("a.txt"); // 读取文件
+			fr = new FileReader("a.txt"); // 读取文件的
 			fw = new FileWriter("b.txt"); // 写文件
 			br = new BufferedReader(fr);
 			bw = new BufferedWriter(fw);
