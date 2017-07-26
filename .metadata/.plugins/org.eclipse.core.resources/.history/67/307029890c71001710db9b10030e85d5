@@ -16,14 +16,14 @@ public class FileDemo05 {
 		FileOutputStream fos=null;
 		try {
 			fis=new FileInputStream("d:\\javacode\\file\\我的青春我做主.txt");
-			fos= new FileOutputStream("D:\\javacode\\myfile\\myfile1.txt",true);
-			//创建中转数组，存放每次读取的内容
+			fos= new FileOutputStream("D:\\javacode\\myfile\\myfile.txt",true);
 			byte[] words = new byte[1024];
-//			while(fis.read()!=-1){
+			while(fis.read()!=-1){
 				fis.read(words);
-				fos.write(words, 0, words.length);
+				int len=words.length;
+				fos.write(words, 0, len);
 				System.out.println("写入成功");
-//			}
+			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

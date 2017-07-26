@@ -1,8 +1,0 @@
-package day10;
-
-public class Demo07 {
-	public static void main(String[] args) {
-		 StringBuffer sb1=new StringBuffer();
-		 System.out.println(sb1.capacity());
-	}
-}
