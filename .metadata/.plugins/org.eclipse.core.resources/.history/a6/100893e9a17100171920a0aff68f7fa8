@@ -1,0 +1,21 @@
+package com.iuthuplonl.io2;
+
+import java.io.FileReader;
+
+/**
+ * 通过fileReader读取文件
+ * @author acer
+ *
+ */
+public class FileReaderTest {
+	public static void main(String[] args) {
+		//创建对象
+		FileReader fileReader = null;
+		StringBuffer sbf = null;
+		try {
+			
+		} catch (Exception e) {
+			
+		}
+	}
+}

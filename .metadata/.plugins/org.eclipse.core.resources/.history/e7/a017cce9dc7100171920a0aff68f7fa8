@@ -1,0 +1,46 @@
+package com.ithup.io03;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+/**
+ * 文件的读写操作
+ * @author acer
+ *
+ */
+public class FileRW {
+	public static void main(String[] args) {
+		//声明对象
+		FileReader fr = null;
+		FileWriter fw = null;
+		BufferedReader br = null;
+		BufferedWriter bw = null;
+		StringBuffer sb =null;
+		try {
+			//创建对象
+			fr = new FileReader("a.txt");
+			fw = new FileWriter("b.txt");
+			br = new BufferedReader(fr);
+			bw = new BufferedWriter(fw);
+			sb = new StringBuffer();
+			String line = null;
+			while((line  = br.readLine()) != null){
+				sb.append(line);
+				System.out.println("修改前："+sb);
+				/*if("{name}".contains(sb)){
+					sb.replace(, end, str)
+					
+				}*/
+				//sb.replace(9, 14, "欧欧");
+				String replace = sb.toString().replace("{name}", "欧欧");
+				bw.write(replace+"\n");
+				bw.flush();
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

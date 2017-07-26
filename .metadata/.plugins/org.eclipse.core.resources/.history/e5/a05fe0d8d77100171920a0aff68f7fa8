@@ -1,0 +1,18 @@
+package com.ithup.io03;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+
+/**
+ * 文件的读写操作
+ * @author acer
+ *
+ */
+public class FileRW {
+	public static void main(String[] args) {
+		FileReader fr = null;
+		FileWriter fw = null;
+		StringBuffer sb =null;
+		
+	}
+}

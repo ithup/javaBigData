@@ -1,0 +1,18 @@
+package com.iuthuplonl.io2;
+/**
+ * 应用FileWriter写文件
+ * 向文件中写入数据
+ * @author acer
+ *
+ */
+public class FileWriter01 {
+		public static void main(String[] args) {
+			//声明对象
+			FileWriter01 fw = null;
+			try {
+				//fw = new FileWriter("d:\\javacode\\file\\a.txt");
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+}

@@ -1,0 +1,21 @@
+package com.iuthuplonl.io2;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+/**
+ * 读取d:\\javacode\\file\\a.txt文件下的内容到控制台
+ * @author acer
+ *
+ */
+public class FileReaderTest2 {
+	public static void main(String[] args) {
+		//创建文件读对象
+		try {
+			FileReader fr = new FileReader("d:\\javacode\\file\\a.txt");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

@@ -1,0 +1,9 @@
+package com.iuthuplonl.io2;
+/**
+ * BufferedReader读取数据内容：
+ * @author acer
+ *
+ */
+public class BufferedReader {
+
+}

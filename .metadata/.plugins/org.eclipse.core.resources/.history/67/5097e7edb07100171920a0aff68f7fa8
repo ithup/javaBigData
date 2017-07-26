@@ -1,0 +1,19 @@
+package com.iuthuplonl.io2;
+
+import java.io.FileReader;
+
+/**
+ * BufferedReader读取数据内容：
+ * 		字符输入流中读取文本，缓冲各个字符，从而实现字符、数组和行的高效读取。 
+ *      可以指定缓冲区的大小，或者可使用默认的大小。大多数情况下，默认值就足够大了
+ * @author acer
+ *
+ */
+public class BufferedReader {
+	public static void main(String[] args) {
+		//声明对象
+		FileReader fr = null;
+		BufferedReader br = null;
+		StringBuffer sb  = null;
+	}
+}
