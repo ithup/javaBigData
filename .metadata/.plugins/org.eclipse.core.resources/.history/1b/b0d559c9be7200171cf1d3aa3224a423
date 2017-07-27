@@ -1,0 +1,13 @@
+package com.ithup.pool;
+/**
+ * ¹ºÂò»ð³µÆ±
+ * @author acer
+ *
+ */
+public class Ticker implements Runnable{
+	@Override
+	public void run() {
+			
+	}
+
+}

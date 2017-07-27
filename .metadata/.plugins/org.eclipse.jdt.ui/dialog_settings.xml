@@ -128,6 +128,8 @@
 		</section>
 	</section>
 	<section name="completion_proposal_size">
+		<item value="326" key="contextSelector.size.y"/>
+		<item value="346" key="contextSelector.size.x"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item value="false" key="SortOrdering"/>

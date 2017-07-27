@@ -1,5 +1,0 @@
-package com.ithuplion.c3p0;
-
-public class C3P0Connection {
-
-}

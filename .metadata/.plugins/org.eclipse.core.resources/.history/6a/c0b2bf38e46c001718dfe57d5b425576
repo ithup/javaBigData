@@ -1,9 +1,0 @@
-package com.ithuplion.dbcp;
-/**
- * DBCP连接池的使用
- * @author acer
- *
- */
-public class DBCPConnection {
-
-}

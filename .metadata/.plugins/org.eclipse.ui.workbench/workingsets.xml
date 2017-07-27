@@ -3,7 +3,7 @@
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1497602070789_2" label="J2EEProject" name="J2EEProject">
 <item elementID="=io" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Lucene" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=gjp" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/gjp" type="4"/>
 <item elementID="=ConnectionPool" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Redis" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Thread" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
@@ -16,9 +16,9 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day11" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day12" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day13" type="4"/>
-<item elementID="=bjshopping" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/bjshopping" type="4"/>
 <item elementID="=MessageMS" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Poker" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Poker" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1497077109506_0" label="Window Working Set" name="Aggregate for window 1497077109506"/>
 <mruList name="javaBigData"/>
