@@ -1,0 +1,14 @@
+package com.ithup.demo;
+
+public class ThreadStart5 {
+	public static void main(String[] args) {
+		new Thread(new Runnable(){
+
+			@Override
+			public void run() {
+				
+			}
+			
+		}).start();;
+	}
+}

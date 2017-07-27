@@ -6,12 +6,13 @@ package com.ithup.thread;
  */
 public class ThreadMain {
 	public static void main(String[] args) {
-		/*SubThread st=new SubThread();
-		st.start();
-		for(int i=0;i<100;i++){
+		SubRunnable2 st=new SubRunnable2();
+		Thread t = new Thread(st);
+		t.start();
+		for(int i=0;i<50;i++){
 			System.out.println("main.."+i);
 		}
-		Thread currentThread = Thread.currentThread();
+		/*Thread currentThread = Thread.currentThread();
 		System.out.println(currentThread.getName());*/
 		//SubRunnable subRunnable = new SubRunnable();
 		/*Thread thread = new Thread(new SubRunnable());
@@ -46,18 +47,18 @@ public class ThreadMain {
 		for(int i=0;i<100;i++){
 			System.out.println("main.."+i);
 		}*/
-		new Thread(new Runnable(){
+		/*new Thread(new Runnable(){
 
 			@Override
 			public void run() {
-				for(int i=0;i<100;i++){
+				for(int i=0;i<10;i++){
 					System.out.println("run.."+i);
 				}
 			}
 			
-		}).start();
-		for(int i=0;i<100;i++){
+		}).start();*/
+		/*for(int i=0;i<10;i++){
 			System.out.println("main.."+i);
-		}
+		}*/
 	}
 }

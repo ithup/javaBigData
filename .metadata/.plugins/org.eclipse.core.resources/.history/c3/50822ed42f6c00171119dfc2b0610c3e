@@ -1,5 +1,0 @@
-package com.ithuplion.domain;
-//该类就是一个JavaBean(组件，主要是将属性进行封装起来)
-public class Message {
-
-}

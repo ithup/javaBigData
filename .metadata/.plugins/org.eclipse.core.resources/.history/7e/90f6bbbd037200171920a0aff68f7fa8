@@ -1,0 +1,17 @@
+package com.ithup.io04;
+
+import java.io.File;
+
+/**
+ * FileInputStream类读取数据read方法
+ * @author acer
+ *
+ */
+public class IO01 {
+	public static void main(String[] args) {
+		File file = new File("a.txt");
+		//创建一个字节输入流对象,必须明确数据源，其实就是创建字节读取流和数据源相关联。  
+		
+		
+	}
+}

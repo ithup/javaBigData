@@ -9,13 +9,13 @@
 <item elementID="=Thread" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1499907412901_2" label="javaBigData" name="javaBigData">
-<item elementID="=day07" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=day08" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=day09" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=day10" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=day11" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=day12" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=day13" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day07" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day08" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day09" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day10" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day11" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day12" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day13" type="4"/>
 <item elementID="=bjshopping" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=MessageMS" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Poker" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>

@@ -1,0 +1,17 @@
+package com.ithup.demo;
+/**
+ * 线程的启动，调用start方法
+ * @author acer
+ *
+ */
+public class ThreadStart2 {
+	public static void main(String[] args) {
+		//实例化对象
+		MyThreadDemo mtd0 = new MyThreadDemo("线程A");
+		MyThreadDemo mtd1 = new MyThreadDemo("线程B");
+//		mtd0.run();
+//		mtd1.run();
+		mtd0.start();
+		mtd1.start();
+	}
+}
