@@ -1,0 +1,18 @@
+package com.ithup.demo;
+/**
+ *线程的优先级由CPU调度决定
+ *并不是优先级越高
+ * @author acer
+ *
+ */
+class ThreadSetPrs implements Runnable{
+	@Override
+	public void run() {
+		
+	}
+}
+public class ThreadSetPr {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,30 @@
+package com.ithup.demo;
+/**
+ *线程的优先级由CPU调度决定
+ *并不是优先级越高就先执行
+ * @author acer
+ *
+ */
+class ThreadSetPrs implements Runnable{
+	@Override
+	public void run() {		//方法的覆写
+		for(int i=0;i<100;i++){
+			try {
+				Thread.sleep(10000);		//休眠10秒
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		//线程的名称
+		System.out.println(Thread.currentThread().getName());
+	}
+}
+public class ThreadSetPr {
+	public static void main(String[] args) {
+		//实例化对象
+		ThreadSetPrs tsp = new ThreadSetPrs();
+		Thread t1 = new Thread(tsp,"线程A");
+		Thread t2 = new Thread(tsp,"线程B");
+		Thread t3 = new Thread(tsp,"线程C");
+	}
+}
