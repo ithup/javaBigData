@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.ithuplion.service.MessageServie"/>
-<fullyQualifiedTypeName name="com.ithuplion.service.impl.MessageServiceImpl"/>
-<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="com.ithuplion.domain.Message"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
 <fullyQualifiedTypeName name="org.apache.commons.dbcp.BasicDataSource"/>
-<fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="org.apache.commons.dbcp.BasicDataSourceFactory"/>
 <fullyQualifiedTypeName name="day12.MyException"/>
 <fullyQualifiedTypeName name="com.mchange.v2.c3p0.ComboPooledDataSource"/>
@@ -60,4 +55,9 @@
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.UUID"/>
 <fullyQualifiedTypeName name="com.ithup.lucky.User"/>
+<fullyQualifiedTypeName name="redis.clients.jedis.Jedis"/>
+<fullyQualifiedTypeName name="redis.clients.jedis.JedisPoolConfig"/>
+<fullyQualifiedTypeName name="redis.clients.jedis.JedisPool"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="com.ithup.tool.JedisPoolUtils"/>
 </qualifiedTypeNameHistroy>

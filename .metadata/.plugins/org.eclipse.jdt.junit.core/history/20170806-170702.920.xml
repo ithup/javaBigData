@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="JedisPools.jedisPools" project="Redis" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testcase name="jedisPools" classname="com.ithup.jedis.JedisPools" time="0.069"/>
-</testrun>

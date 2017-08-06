@@ -1,7 +1,0 @@
-package com.ithup.demo;
-
-public class ThreadStart5 {
-	public static void main(String[] args) {
-		
-	}
-}
