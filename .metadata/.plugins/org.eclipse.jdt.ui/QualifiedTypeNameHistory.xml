@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.ithuplion.MessageDao.MessageDao"/>
-<fullyQualifiedTypeName name="java.sql.Date"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="com.ithuplion.MessageDaoImpl.MessageDaoImpl"/>
 <fullyQualifiedTypeName name="com.ithuplion.service.MessageServie"/>
 <fullyQualifiedTypeName name="com.ithuplion.service.impl.MessageServiceImpl"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
@@ -39,7 +35,6 @@
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.Reader"/>
 <fullyQualifiedTypeName name="com.iuthuplonl.io2.BufferedReader"/>
@@ -60,4 +55,9 @@
 <fullyQualifiedTypeName name="com.ithup.demo.MyThreadJoin"/>
 <fullyQualifiedTypeName name="com.ithup.pool.ThreadTicker"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.UUID"/>
+<fullyQualifiedTypeName name="com.ithup.lucky.User"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,34 @@
+package com.ithup.tool;
+
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
+import redis.clients.jedis.JedisPoolConfig;
+
+/**
+ * jedis连接工具类
+ * @author acer
+ *
+ */
+public class JedisPoolUtils {
+	//连接池对象
+	private static JedisPool pool = null;
+	//当类被加载时，静态代码块里的程序只执行一次
+	static {
+		//创建连接池子的配置对象
+		JedisPoolConfig poolConfig = new JedisPoolConfig();
+		poolConfig.setMaxIdle(30);		//最大闲置个数
+		poolConfig.setMaxIdle(10);		//最小闲置个数
+		poolConfig.setMaxTotal(50);		//最大连接数
+		//创建一个redis 连接池
+		pool = new JedisPool(poolConfig, "127.0.0.1", 6379);
+	}
+	
+	/**
+	 * 获得jedis连接资源的方法
+	 * @return
+	 */
+	public static Jedis getJedis(){
+		//返回连接资源对象
+		return pool.getResource();
+	}
+}

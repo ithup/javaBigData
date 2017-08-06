@@ -1,7 +1,0 @@
-package com.iuthuplonl.io;
-
-public class FileDemo04 {
-	public static void main(String[] args) {
-		
-	}
-}
